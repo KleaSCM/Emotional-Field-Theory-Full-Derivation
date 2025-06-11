@@ -66,7 +66,7 @@ Node 4: Emotional Self-Potential
 
 Potential function: 
 $$
-V_k(E_k) = \frac{1}{2} a_k E_k^2 + \frac{1}{4} b_k E_k^4$
+V_k(E_k) = \frac{1}{2} a_k E_k^2 + \frac{1}{4} b_k E_k^4
 $$
 
 Derivative: $\frac{\partial V_k}{\partial E_k} = a_k E_k + b_k E_k^3$
@@ -94,7 +94,7 @@ Node 6: Source Term
 
 Source term: 
 $$
-S_k(\boldsymbol{\tau}, t) = \sum_{i=1}^{n} s_{ki} \tau_i(t) + I_k(t)$
+S_k(\boldsymbol{\tau}, t) = \sum_{i=1}^{n} s_{ki} \tau_i(t) + I_k(t)
 $$
 
 Where:
@@ -102,8 +102,6 @@ Where:
 $s_{ki} \in \mathbb{R}$ = sensitivity of emotion $E_k$ to trait $\tau_i$
 
 $I_k(t)$ = external input (events, stimuli, memories)
-
-
 
 ---
 
