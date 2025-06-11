@@ -7,14 +7,20 @@ Node 1: System Definition
 
 We define:
 
-Trait space: $$ \boldsymbol{\tau} \in \mathbb{R}^n $$
+Trait space: $\boldsymbol{\tau} \in \mathbb{R}^n$
 
-Emotional field: $$ \mathbf{E}: \mathbb{R}^n \times \mathbb{R}^+ \to \mathbb{R}^m $$
+Emotional field:
+
+$$
+\mathbf{E}: \mathbb{R}^n \times \mathbb{R}^+ \to \mathbb{R}^m 
+$$
 
 
 Each emotion is a field component:
 
+$$
 \mathbf{E} = (E_1, E_2, \dots, E_m)
+$$
 
 Each $$ E_k $$ is a scalar field over the trait space and time:
 
