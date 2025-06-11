@@ -1,4 +1,4 @@
-Emotional Field Theory: Full Derivation
+Emotional Field Theory: Full Derivation (Canvas-Ready)
 
 
 ---
@@ -7,16 +7,16 @@ Node 1: System Definition
 
 We define:
 
-Trait space: 
+Trait space: $$ \boldsymbol{\tau} \in \mathbb{R}^n $$
 
-Emotional field: 
+Emotional field: $$ \mathbf{E}: \mathbb{R}^n \times \mathbb{R}^+ \to \mathbb{R}^m $$
 
 
 Each emotion is a field component:
 
 \mathbf{E} = (E_1, E_2, \dots, E_m)
 
-Each  is a scalar field over the trait space and time:
+Each $$ E_k $$ is a scalar field over the trait space and time:
 
 E_k = E_k(\boldsymbol{\tau}, t)
 
@@ -35,7 +35,7 @@ Trait dynamics are driven by the emotional field:
 
 Where:
 
- is the coupling coefficient between emotion  and trait 
+$$ c_{ik} \in \mathbb{R} $$ is the coupling coefficient between emotion $$ E_k $$ and trait $$ \tau_i $$
 
 
 
@@ -51,13 +51,13 @@ Each emotion obeys:
 
 Where:
 
- = propagation speed of emotion 
+$$ v_k $$ = propagation speed of emotion $$ E_k $$
 
- = Laplacian over trait space
+$$ \nabla^2 $$ = Laplacian over trait space
 
- = self-potential of the emotion
+$$ V_k(E_k) $$ = self-potential of the emotion
 
- = source term (external or internal perturbation)
+$$ S_k(\boldsymbol{\tau}, t) $$ = source term (external or internal perturbation)
 
 
 
@@ -84,7 +84,7 @@ Coupled emotion equation:
 
 Where:
 
- = coupling strength between emotions  and 
+$$ g_{kj} \in \mathbb{R} $$ = coupling strength between emotions $$ E_k $$ and $$ E_j $$
 
 
 
@@ -98,9 +98,9 @@ S_k(\boldsymbol{\tau}, t) = \sum_{i=1}^{n} s_{ki} \tau_i(t) + I_k(t)
 
 Where:
 
- = sensitivity of emotion  to trait 
+$$ s_{ki} \in \mathbb{R} $$ = sensitivity of emotion $$ E_k $$ to trait $$ \tau_i $$
 
- = external input (events, stimuli, memories)
+$$ I_k(t) $$ = external input (events, stimuli, memories)
 
 
 
@@ -152,13 +152,13 @@ Hamiltonian (energy):
 
 Node 11: Next Steps
 
-Define explicit coupling matrices 
+Define explicit coupling matrices $$ c_{ik}, g_{kj}, s_{ki} $$
 
-Specify number of traits  and emotions 
+Specify number of traits $$ n $$ and emotions $$ m $$
 
-Select propagation speeds 
+Select propagation speeds $$ v_k $$
 
-Choose potentials 
+Choose potentials $$ a_k, b_k $$
 
 Simulate numerical solutions if desired
 
