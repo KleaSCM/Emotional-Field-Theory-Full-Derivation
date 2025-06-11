@@ -9,39 +9,25 @@ We define:
 
 Trait space: $\boldsymbol{\tau} \in \mathbb{R}^n$
 
-Emotional field:
-
-$$
-\mathbf{E}: \mathbb{R}^n \times \mathbb{R}^+ \to \mathbb{R}^m 
-$$
+Emotional field: $\mathbf{E}: \mathbb{R}^n \times \mathbb{R}^+ \to \mathbb{R}^m$
 
 
-Each emotion is a field component:
+Each emotion is a field component: $\mathbf{E} = (E_1, E_2, \dots, E_m)$
 
-$$
-\mathbf{E} = (E_1, E_2, \dots, E_m)
-$$
-
-Each $$ E_k $$ is a scalar field over the trait space and time:
-
-E_k = E_k(\boldsymbol{\tau}, t)
+Each $E_k$ is a scalar field over the trait space and time: $E_k = E_k(\boldsymbol{\tau}, t)$
 
 
 ---
 
 Node 2: Trait Evolution
 
-Define trait vector:
+Define trait vector: $\boldsymbol{\tau}(t) = (\tau_1(t), \tau_2(t), \dots, \tau_n(t))$
 
-\boldsymbol{\tau}(t) = (\tau_1(t), \tau_2(t), \dots, \tau_n(t))
-
-Trait dynamics are driven by the emotional field:
-
-\frac{d \tau_i}{dt} = \sum_{k=1}^{m} c_{ik} E_k(\boldsymbol{\tau}, t)
+Trait dynamics are driven by the emotional field: $\frac{d \tau_i}{dt} = \sum_{k=1}^{m} c_{ik} E_k(\boldsymbol{\tau}, t)$
 
 Where:
 
-$$ c_{ik} \in \mathbb{R} $$ is the coupling coefficient between emotion $$ E_k $$ and trait $$ \tau_i $$
+$c_{ik} \in \mathbb{R}$ is the coupling coefficient between emotion $E_k$ and trait $\tau_i$
 
 
 
@@ -57,13 +43,13 @@ Each emotion obeys:
 
 Where:
 
-$$ v_k $$ = propagation speed of emotion $$ E_k $$
+$v_k$ = propagation speed of emotion $E_k$
 
-$$ \nabla^2 $$ = Laplacian over trait space
+$\nabla^2$ = Laplacian over trait space
 
-$$ V_k(E_k) $$ = self-potential of the emotion
+$V_k(E_k)$ = self-potential of the emotion
 
-$$ S_k(\boldsymbol{\tau}, t) $$ = source term (external or internal perturbation)
+$S_k(\boldsymbol{\tau}, t)$ = source term (external or internal perturbation)
 
 
 
@@ -71,13 +57,9 @@ $$ S_k(\boldsymbol{\tau}, t) $$ = source term (external or internal perturbation
 
 Node 4: Emotional Self-Potential
 
-Potential function:
+Potential function: $V_k(E_k) = \frac{1}{2} a_k E_k^2 + \frac{1}{4} b_k E_k^4$
 
-V_k(E_k) = \frac{1}{2} a_k E_k^2 + \frac{1}{4} b_k E_k^4
-
-Derivative:
-
-\frac{\partial V_k}{\partial E_k} = a_k E_k + b_k E_k^3
+Derivative: $\frac{\partial V_k}{\partial E_k} = a_k E_k + b_k E_k^3$
 
 
 ---
@@ -90,7 +72,7 @@ Coupled emotion equation:
 
 Where:
 
-$$ g_{kj} \in \mathbb{R} $$ = coupling strength between emotions $$ E_k $$ and $$ E_j $$
+$g_{kj} \in \mathbb{R}$ = coupling strength between emotions $E_k$ and $E_j$
 
 
 
@@ -98,15 +80,13 @@ $$ g_{kj} \in \mathbb{R} $$ = coupling strength between emotions $$ E_k $$ and $
 
 Node 6: Source Term
 
-Source term:
-
-S_k(\boldsymbol{\tau}, t) = \sum_{i=1}^{n} s_{ki} \tau_i(t) + I_k(t)
+Source term: $S_k(\boldsymbol{\tau}, t) = \sum_{i=1}^{n} s_{ki} \tau_i(t) + I_k(t)$
 
 Where:
 
-$$ s_{ki} \in \mathbb{R} $$ = sensitivity of emotion $$ E_k $$ to trait $$ \tau_i $$
+$s_{ki} \in \mathbb{R}$ = sensitivity of emotion $E_k$ to trait $\tau_i$
 
-$$ I_k(t) $$ = external input (events, stimuli, memories)
+$I_k(t)$ = external input (events, stimuli, memories)
 
 
 
@@ -155,17 +135,4 @@ Hamiltonian (energy):
 
 
 ---
-
-Node 11: Next Steps
-
-Define explicit coupling matrices $$ c_{ik}, g_{kj}, s_{ki} $$
-
-Specify number of traits $$ n $$ and emotions $$ m $$
-
-Select propagation speeds $$ v_k $$
-
-Choose potentials $$ a_k, b_k $$
-
-Simulate numerical solutions if desired
-
 
